@@ -24,7 +24,7 @@ public class HuffmanTreeTest {
     public void convertBytesToBinaryTest() {
         //given
         HuffmanTree tree = new HuffmanTree();
-        String pathToRootDir = "slowo_niemanieCompressedTree.txt";
+        String pathToRootDir = "texts/slowo_niemanieCompressedTree.txt";
 
         //when
         String result = tree.convertBytesToBinary(pathToRootDir);
@@ -51,7 +51,7 @@ public class HuffmanTreeTest {
     public void treeFromFileAsArrayListTest() {
         //given
         HuffmanTree tree = new HuffmanTree();
-        String pathToRootDir = "slowo_niemanieCompressedTree.txt";
+        String pathToRootDir = "texts/slowo_niemanieCompressedTree.txt";
 
         //when
         String expectedTreeInString = "0001a1m1e01i1n";

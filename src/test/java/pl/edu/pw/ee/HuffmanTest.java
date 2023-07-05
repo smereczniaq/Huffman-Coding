@@ -25,7 +25,7 @@ public class HuffmanTest {
     public void readNotExistingFile() {
         //given
         Huffman huffman = new Huffman();
-        String filename = "filename";
+        String filename = "texts/filename";
 
         //when
         huffman.huffman(filename, true);
@@ -38,7 +38,7 @@ public class HuffmanTest {
     public void huffmanCatchIllegalCharacterException() {
         //given
         Huffman huffman = new Huffman();
-        String originalFileName = "niemanie.txt";
+        String originalFileName = "texts/niemanie.txt";
 
         //when
         huffman.huffman(originalFileName, true);
@@ -51,7 +51,7 @@ public class HuffmanTest {
     public void huffmanCheckIfCompressedFileIsSmallerThanOriginal() {
         //given
         Huffman huffman = new Huffman();
-        String fileToCompressName = "niemanie_bez_znakow.txt";
+        String fileToCompressName = "texts/niemanie_bez_znakow.txt";
         File originalFile = new File(fileToCompressName);
 
         //when
@@ -66,9 +66,9 @@ public class HuffmanTest {
     public void checkIfOriginalAndDecompressedFilesAreEqual() {
         //given
         Huffman huffman = new Huffman();
-        String originalFileName = "niemanie_bez_znakow.txt";
-        String compressedFileName = "niemanie_bez_znakowCompressed.txt";
-        String decompressedFileName = "niemanie_bez_znakowCompressedDecompressed.txt";
+        String originalFileName = "texts/niemanie_bez_znakow.txt";
+        String compressedFileName = "texts/niemanie_bez_znakowCompressed.txt";
+        String decompressedFileName = "texts/niemanie_bez_znakowCompressedDecompressed.txt";
         String originalText = "g";
         String decompressedText = "";
 
@@ -108,7 +108,7 @@ public class HuffmanTest {
     public void checkIfEncodingFileIsEmptyTest() {
         //given
         Huffman huffman = new Huffman();
-        String fileToCompressName = "pusty_plik.txt";
+        String fileToCompressName = "texts/pusty_plik.txt";
 
         //when
         huffman.huffman(fileToCompressName, true);
@@ -121,8 +121,8 @@ public class HuffmanTest {
     public void huffmanCheckIfAmountOfCharsInDecompressedEqualsOriginalWhenSingleChar() {
         //given
         Huffman huffman = new Huffman();
-        String originalFileName = "pojedynczy_znak.txt";
-        String fileToDecompressName = "pojedynczy_znakCompressed.txt";
+        String originalFileName = "texts/pojedynczy_znak.txt";
+        String fileToDecompressName = "texts/pojedynczy_znakCompressed.txt";
 
         //when
         huffman.huffman(originalFileName, true);
@@ -138,7 +138,7 @@ public class HuffmanTest {
     public void huffmanCompressTest(){
         //given
         Huffman huffman = new Huffman();
-        String originalFileName = "Huffman_Strzeminski_oddanie_2022.txt";
+        String originalFileName = "texts/Huffman_Strzeminski_oddanie_2022.txt";
         
         //when
         huffman.huffman(originalFileName, true);
@@ -148,7 +148,7 @@ public class HuffmanTest {
     public void huffmanDecompressTest(){
         //given
         Huffman huffman = new Huffman();
-        String fileName = "Huffman_Strzeminski_oddanie_2022Compressed.txt";
+        String fileName = "texts/Huffman_Strzeminski_oddanie_2022Compressed.txt";
         
         //when
         huffman.huffman(fileName, false);
