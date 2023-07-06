@@ -28,4 +28,4 @@ public class Main {
     }
 }
 ```
-In this example, the program creates an object of the Huffman class, sets the pathToRootDir variable to the desired file path, and sets compress to true to compress the file. The result is then stored in the result variable. You can customize the usage according to your project's needs.
+In this example, the program creates an object of the Huffman class, sets the pathToRootDir variable to the desired file path, and sets compress to true to compress the file.
