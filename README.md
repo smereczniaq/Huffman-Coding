@@ -18,8 +18,6 @@ To use the Huffman coding program, follow the steps below:
 
 ## Example
 ```java
-import com.example.Huffman;
-
 public class Main {
     public static void main(String[] args) {
         String pathToRootDir = "path/to/your/file.txt";
